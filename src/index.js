@@ -4,11 +4,11 @@ import './index.css';
 import './index.html';
 
 
+
 function playMedia(soundFile){
   const x = document.getElementById(soundFile);
   x.play();
 }
-
 
 class Title extends React.Component{
   render(){
@@ -34,7 +34,8 @@ class Title extends React.Component{
           <button
             class="buttons"
             onClick={() => {this.props.buttonOnClick(this.props.soundMaker);
-            playMedia(this.props.label);}} 
+            playMedia(this.props.label);
+            }} 
           >
             {this.props.label}
 
@@ -153,7 +154,7 @@ class Title extends React.Component{
             label="Q" 
             soundMaker="Conga" 
             buttonOnClick={this.handleOnClick} 
-            media="/index.drum-kit-sounds/Conga_1.wav" mediaType="audio/wav"
+            media="https://banks-drum-machine-sounds.s3.us-east-2.amazonaws.com/Conga_1.wav" mediaType="audio/wav"
             mediaOnKeyDown={this.handlingOnKeyDown}
           />
 
@@ -162,7 +163,7 @@ class Title extends React.Component{
             label="W" 
             soundMaker="Crash" 
             buttonOnClick={this.handleOnClick} 
-            media="/index.drum-kit-sounds/Crash_2.wav" mediaType="audio/wav"
+            media="https://banks-drum-machine-sounds.s3.us-east-2.amazonaws.com/Crash_2.WAV" mediaType="audio/wav"
             mediaOnKeyDown={this.handlingOnKeyDown}
           />
 
@@ -171,7 +172,7 @@ class Title extends React.Component{
             label="E" 
             soundMaker="Fall-Fx" 
             buttonOnClick={this.handleOnClick} 
-            media="/index.drum-kit-sounds/Fall_FX14.WAV" mediaType="audio/WAV"
+            media="https://banks-drum-machine-sounds.s3.us-east-2.amazonaws.com/Fall_FX14.wav" mediaType="audio/WAV"
             mediaOnKeyDown={this.handlingOnKeyDown}
           />
 
@@ -181,7 +182,7 @@ class Title extends React.Component{
             label="A" 
             soundMaker="Hi-Hat" 
             buttonOnClick={this.handleOnClick} 
-            media="/index.drum-kit-sounds/Hihat4_closed.wav" 
+            media="https://banks-drum-machine-sounds.s3.us-east-2.amazonaws.com/Hihat4_closed.wav" 
             mediaType="audio/wav"
             mediaOnKeyDown={this.handlingOnKeyDown}
           />
@@ -191,7 +192,7 @@ class Title extends React.Component{
             label="S" 
             soundMaker="Kick" 
             buttonOnClick={this.handleOnClick} 
-            media="/index.drum-kit-sounds/Kick.wav" mediaType="audio/wav"
+            media="https://banks-drum-machine-sounds.s3.us-east-2.amazonaws.com/Kick.wav" mediaType="audio/wav"
             mediaOnKeyDown={this.handlingOnKeyDown}
           />
 
@@ -200,7 +201,7 @@ class Title extends React.Component{
             label="D" 
             soundMaker="Tom" 
             buttonOnClick={this.handleOnClick} 
-            media="/index.drum-kit-sounds/N-Tom1.wav" mediaType="audio/wav"
+            media="https://banks-drum-machine-sounds.s3.us-east-2.amazonaws.com/N-Tom1.wav" mediaType="audio/wav"
             mediaOnKeyDown={this.handlingOnKeyDown}
           />
 
@@ -209,7 +210,7 @@ class Title extends React.Component{
             label="Z" 
             soundMaker="Snare" 
             buttonOnClick={this.handleOnClick} 
-            media="/index.drum-kit-sounds/Snare.wav" mediaType="audio/wav"
+            media="https://banks-drum-machine-sounds.s3.us-east-2.amazonaws.com/Snare.wav" mediaType="audio/wav"
             mediaOnKeyDown={this.handlingOnKeyDown}
           />
 
@@ -218,7 +219,7 @@ class Title extends React.Component{
             label="X" 
             soundMaker="Syh-Tom" 
             buttonOnClick={this.handleOnClick} 
-            media="/index.drum-kit-sounds/SyhTom01.wav" mediaType="audio/wav"
+            media="https://banks-drum-machine-sounds.s3.us-east-2.amazonaws.com/SyhTom01.wav" mediaType="audio/wav"
             mediaOnKeyDown={this.handlingOnKeyDown}
           />
 
@@ -226,7 +227,7 @@ class Title extends React.Component{
             class="drum-pad" 
             label="C" 
             soundMaker="Synth-Tom" 
-            buttonOnClick={this.handleOnClick} media="index.drum-kit-sounds/SynthTom01.wav" mediaType="audio/wav"
+            buttonOnClick={this.handleOnClick} media="https://banks-drum-machine-sounds.s3.us-east-2.amazonaws.com/SynthTom01.wav" mediaType="audio/wav"
             mediaOnKeyDown={this.handlingOnKeyDown}
           />
          <div id="sound-descriptor">
